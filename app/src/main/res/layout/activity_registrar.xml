@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".vistas.Registrar">
+
+    <EditText
+        android:id="@+id/edt_FirstName"
+        android:layout_width="213dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:digits="abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
+        android:hint="Nombre"
+        app:layout_constraintTop_toBottomOf="@+id/edt_LastName"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <EditText
+        android:id="@+id/edt_LastName"
+        android:layout_width="212dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:digits="abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
+        android:hint="Apellido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtSign_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="correo@example.com"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/edt_FirstName"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <EditText
+        android:id="@+id/edtSign_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintVertical_bias="0.10"
+        tools:layout_editor_absoluteX="101dp" />
+
+    <EditText
+        android:id="@+id/edtSign_PasswordConf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Confirmar contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintVertical_bias="0.2"
+        tools:layout_editor_absoluteX="101dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="364dp">
+
+        <RadioButton
+            android:id="@+id/rb_mujer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Femenino" />
+
+        <RadioButton
+            android:id="@+id/rb_hombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masculino" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSign_Registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        tools:layout_editor_absoluteX="99dp" />
+
+    <Button
+        android:id="@+id/btn_Cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        app:layout_constraintStart_toEndOf="@+id/btnSign_Registrar"
+        tools:layout_editor_absoluteY="9dp" />
+</LinearLayout>
